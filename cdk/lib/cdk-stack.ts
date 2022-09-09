@@ -1,6 +1,7 @@
 import * as cdk from "@aws-cdk/core";
 import { CfnService } from "@aws-cdk/aws-apprunner";
 
+
 export class CdkStack extends cdk.Stack {
   constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
@@ -9,7 +10,7 @@ export class CdkStack extends cdk.Stack {
       serviceName: "my-apprunner-app",
       sourceConfiguration: {
         authenticationConfiguration: {
-          connectionArn: "arn:aws:apprunner:us-east-1:219841394426:connection/apprunnerGithubConnector/60a5f2ec853c4babb25cd323e00ce7fc",
+          connectionArn: "arn:aws:apprunner:us-east-1:219841394426:connection/apprunnerGithubConnector/b11d5deb63e043e69f724762beba2a35",
         },
         autoDeploymentsEnabled: true,
         codeRepository: {
